@@ -13,6 +13,7 @@
 		B2811E7B20D1578D00C77FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2811E7A20D1578D00C77FCA /* Assets.xcassets */; };
 		B2811E7E20D1578D00C77FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2811E7C20D1578D00C77FCA /* LaunchScreen.storyboard */; };
 		B2811E8120D1578D00C77FCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2811E8020D1578D00C77FCA /* main.m */; };
+		B2811E8920D158C200C77FCA /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2811E8820D158C200C77FCA /* TopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		B2811E7D20D1578D00C77FCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2811E7F20D1578D00C77FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2811E8020D1578D00C77FCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B2811E8720D158C200C77FCA /* TopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopView.h; sourceTree = "<group>"; };
+		B2811E8820D158C200C77FCA /* TopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
+		B2811E8A20D159F800C77FCA /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		B2811E7020D1578C00C77FCA /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				B2811E8A20D159F800C77FCA /* Constant.h */,
 				B2811E7120D1578C00C77FCA /* AppDelegate.h */,
 				B2811E7220D1578C00C77FCA /* AppDelegate.m */,
 				B2811E7420D1578C00C77FCA /* ViewController.h */,
@@ -67,6 +72,8 @@
 				B2811E7C20D1578D00C77FCA /* LaunchScreen.storyboard */,
 				B2811E7F20D1578D00C77FCA /* Info.plist */,
 				B2811E8020D1578D00C77FCA /* main.m */,
+				B2811E8720D158C200C77FCA /* TopView.h */,
+				B2811E8820D158C200C77FCA /* TopView.m */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 			files = (
 				B2811E7620D1578C00C77FCA /* ViewController.m in Sources */,
 				B2811E8120D1578D00C77FCA /* main.m in Sources */,
+				B2811E8920D158C200C77FCA /* TopView.m in Sources */,
 				B2811E7320D1578C00C77FCA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

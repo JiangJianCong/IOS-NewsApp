@@ -6,9 +6,14 @@
 //  Copyright © 2018 space. All rights reserved.
 //
 
-#import "ViewController.h"
 
-@interface ViewController ()
+#import "ViewController.h"
+#import "TopView.h"
+#import "Constant.h"
+
+@interface ViewController () {
+    TopView *topView;
+}
 
 @end
 
@@ -16,7 +21,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self addTopView];
+    
+}
+
+-(void)addTopView {
+    topView = [[TopView alloc]initWithFrame:CGRectMake(0, 0, UISCREEN_WIDTH, 60)];
+    [topView setTitle:@"space"];
+    [self.view addSubview:topView];
 }
 
 
