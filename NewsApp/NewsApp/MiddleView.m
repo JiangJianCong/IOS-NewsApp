@@ -10,6 +10,7 @@
 #import "Constant.h"
 #import "PromptView.h"
 #import "MaskView.h"
+#import "MixImageText.h"
 
 @interface MiddleView()<UIScrollViewDelegate> {
     NSArray *types;
@@ -32,6 +33,22 @@
     return self;
 }
 
+
+/**
+ 加上图文描述
+
+ @param frame CGRect
+ @param image 照片名
+ @param title 标题
+ @param url 地址
+ */
+-(void) addMixImageTextFrame:(CGRect)frame image:(NSString*)image title:(NSString*)title url:(NSString*)url {
+    MixImageText *mixImageText = [[MixImageText alloc]initWithFrame:frame];
+    [self addSubview:mixImageText];
+    [mixImageText setImage:image];
+    [mixImageText setTitle:title];
+    [mixImageText setUrl:url];
+}
 
 /**
  新增轮播图

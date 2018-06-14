@@ -13,4 +13,5 @@
 @property(nonatomic, strong)NSArray *newsInfo;
 -(void) addNewsScrollView;
 -(id)initWithFrame:(CGRect)frame newsType:(NSArray *)type;
+-(void) addMixImageTextFrame:(CGRect)frame image:(NSString*)image title:(NSString*)title url:(NSString*)url;
 @end

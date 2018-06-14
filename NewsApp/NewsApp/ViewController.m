@@ -29,7 +29,7 @@
 }
 
 -(void) addMiddleView {
-    middleView = [[MiddleView alloc]initWithFrame:CGRectMake(0, 60, UISCREEN_WIDTH, 40+200) newsType:@[@"web计算",@"计信息管理系统",@"移动互联网",@"微积分",@"线性代数",@"软件工程"]];
+    middleView = [[MiddleView alloc]initWithFrame:CGRectMake(0, 60, UISCREEN_WIDTH, 40+200+140) newsType:@[@"web计算",@"计信息管理系统",@"移动互联网",@"微积分",@"线性代数",@"软件工程"]];
     [self.view addSubview:middleView];
     
     //    image info;
@@ -42,6 +42,11 @@
     //    数据传递? 1 自定义构造方法 2 属性
     middleView.newsInfo = newsInfo;
     [middleView addNewsScrollView];
+    
+    //    添加图文混排;
+    [middleView addMixImageTextFrame:CGRectMake(0, 245, UISCREEN_WIDTH, 60) image:@"1.jpg" title:@"xdwefwfwfwgergegergegegergerwrfwfwfwefjwuifhiuwhiurhohoihwoifhowhfoiwhfoiwhfiowehfoiwhfoiwhfoiwhfoiwhfiowehfiowhfowehfoiwhfiowhfiowfhiowehfoiwhefiowhfoiwehfoiwhuohvsnsjvnjknfwfoi" url:@"www.baidu.com"];
+    
+    [middleView addMixImageTextFrame:CGRectMake(0, 310, UISCREEN_WIDTH, 60) image:@"2.jpg" title:@"xdwefwfwfwgergegergegegergerwrfwfwfwefjwuifhiuwhiurhohoihwoifhowhfoiwhfoiwhfiowehfoiwhfoiwhfoiwhfoiwhfiowehfiowhfowehfoiwhfiowhfiowfhiowehfoiwhefiowhfoiwehfoiwhuohvsnsjvnjknfwfoi" url:@"www.baidu.com"];
     
 }
 
