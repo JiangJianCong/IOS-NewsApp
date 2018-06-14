@@ -14,6 +14,7 @@
 		B2811E7E20D1578D00C77FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2811E7C20D1578D00C77FCA /* LaunchScreen.storyboard */; };
 		B2811E8120D1578D00C77FCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2811E8020D1578D00C77FCA /* main.m */; };
 		B2811E8920D158C200C77FCA /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2811E8820D158C200C77FCA /* TopView.m */; };
+		B285D1BA20D24B5C00549340 /* MiddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B285D1B920D24B5C00549340 /* MiddleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		B2811E8720D158C200C77FCA /* TopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TopView.h; sourceTree = "<group>"; };
 		B2811E8820D158C200C77FCA /* TopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
 		B2811E8A20D159F800C77FCA /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		B285D1B820D24B5C00549340 /* MiddleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiddleView.h; sourceTree = "<group>"; };
+		B285D1B920D24B5C00549340 /* MiddleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiddleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 				B2811E8020D1578D00C77FCA /* main.m */,
 				B2811E8720D158C200C77FCA /* TopView.h */,
 				B2811E8820D158C200C77FCA /* TopView.m */,
+				B285D1B820D24B5C00549340 /* MiddleView.h */,
+				B285D1B920D24B5C00549340 /* MiddleView.m */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 				B2811E7620D1578C00C77FCA /* ViewController.m in Sources */,
 				B2811E8120D1578D00C77FCA /* main.m in Sources */,
 				B2811E8920D158C200C77FCA /* TopView.m in Sources */,
+				B285D1BA20D24B5C00549340 /* MiddleView.m in Sources */,
 				B2811E7320D1578C00C77FCA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

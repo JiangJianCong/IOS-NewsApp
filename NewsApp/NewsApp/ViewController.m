@@ -10,9 +10,11 @@
 #import "ViewController.h"
 #import "TopView.h"
 #import "Constant.h"
+#import "MiddleView.h"
 
 @interface ViewController () {
     TopView *topView;
+    MiddleView *middleView;
 }
 
 @end
@@ -22,6 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addTopView];
+    [self addMiddleView];
+    
+}
+
+-(void) addMiddleView {
+    middleView = [[MiddleView alloc]initWithFrame:CGRectMake(0, 60, UISCREEN_WIDTH, 60) newsType:@[@"web计算",@"计信息管理系统",@"移动互联网",@"微积分",@"线性代数",@"软件工程"]];
+    [self.view addSubview:middleView];
     
 }
 
