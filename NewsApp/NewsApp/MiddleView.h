@@ -10,5 +10,7 @@
 
 @interface MiddleView : UIView
 
+@property(nonatomic, strong)NSArray *newsInfo;
+-(void) addNewsScrollView;
 -(id)initWithFrame:(CGRect)frame newsType:(NSArray *)type;
 @end

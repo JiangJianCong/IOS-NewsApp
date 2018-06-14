@@ -16,6 +16,7 @@
 		B2811E8920D158C200C77FCA /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2811E8820D158C200C77FCA /* TopView.m */; };
 		B285D1BA20D24B5C00549340 /* MiddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B285D1B920D24B5C00549340 /* MiddleView.m */; };
 		B285D1BD20D255C500549340 /* PromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = B285D1BC20D255C500549340 /* PromptView.m */; };
+		B285D1C020D2627800549340 /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = B285D1BF20D2627800549340 /* MaskView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		B285D1B920D24B5C00549340 /* MiddleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiddleView.m; sourceTree = "<group>"; };
 		B285D1BB20D255C500549340 /* PromptView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PromptView.h; sourceTree = "<group>"; };
 		B285D1BC20D255C500549340 /* PromptView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PromptView.m; sourceTree = "<group>"; };
+		B285D1BE20D2627800549340 /* MaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaskView.h; sourceTree = "<group>"; };
+		B285D1BF20D2627800549340 /* MaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				B285D1B920D24B5C00549340 /* MiddleView.m */,
 				B285D1BB20D255C500549340 /* PromptView.h */,
 				B285D1BC20D255C500549340 /* PromptView.m */,
+				B285D1BE20D2627800549340 /* MaskView.h */,
+				B285D1BF20D2627800549340 /* MaskView.m */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				B285D1BA20D24B5C00549340 /* MiddleView.m in Sources */,
 				B285D1BD20D255C500549340 /* PromptView.m in Sources */,
 				B2811E7320D1578C00C77FCA /* AppDelegate.m in Sources */,
+				B285D1C020D2627800549340 /* MaskView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

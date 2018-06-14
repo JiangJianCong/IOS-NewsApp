@@ -70,3 +70,29 @@
 }
 
 ```
+
+4. 蒙板的设计
+- 新建一个MaskView类并且继承UIView
+- 数据使用字典来保存每一个图文的信息
+```objective-c
+...
+    NSDictionary *newsinfo0 = [NSDictionary dictionaryWithObjectsAndKeys:@"1.png",@"image",@"iOS9的那些神坑",@"info", nil];
+    NSDictionary *newsinfo1 = [NSDictionary dictionaryWithObjectsAndKeys:@"2.png",@"image",@"iOS9的摄像头",@"info", nil];
+    NSDictionary *newsinfo2 = [NSDictionary dictionaryWithObjectsAndKeys:@"3.png",@"image",@"iOS9UiStackView",@"info", nil];
+    
+    NSArray *newsInfo = [[NSArray alloc]initWithObjects:newsinfo0,newsinfo1,newsinfo2,nil];
+...
+
+```
+
+- MaskView 放出2个方法给外部调用，具体实现方法看m文件
+```objective-c
+#import <UIKit/UIKit.h>
+
+@interface MaskView : UIView
+-(void) setTitle:(NSString*) title;
+-(void) setPageControlNum:(int)pageNum;
+@end
+
+```
+

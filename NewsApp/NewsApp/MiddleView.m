@@ -9,11 +9,14 @@
 #import "MiddleView.h"
 #import "Constant.h"
 #import "PromptView.h"
+#import "MaskView.h"
 
-@interface MiddleView() {
+@interface MiddleView()<UIScrollViewDelegate> {
     NSArray *types;
     UIScrollView *scrollView;
-    
+    UIScrollView *newScrollView;
+    NSMutableArray *arrayInfo;
+    MaskView *maskView;
 }
 @end
 
@@ -27,6 +30,50 @@
         [self addScrollView];
     }
     return self;
+}
+
+
+/**
+ 新增轮播图
+ */
+-(void) addNewsScrollView {
+    newScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 40, 414, 200)];
+    newScrollView.contentSize = CGSizeMake(414*3, 200);
+    newScrollView.contentOffset = CGPointMake(0, 0);
+    newScrollView.showsHorizontalScrollIndicator = false;
+    newScrollView.pagingEnabled = true;
+    newScrollView.delegate = self;
+    
+    int i = 0;
+    arrayInfo = [[NSMutableArray alloc]init];
+    for (NSDictionary *item in _newsInfo) {
+        NSString *image = [item valueForKey:@"image"];
+        NSString *info = [item valueForKey:@"info"];
+        [arrayInfo addObject:info];
+        
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(414*i++, 0, 414, 200)];
+        imageView.image = [UIImage imageNamed:image];
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        
+        [newScrollView addSubview:imageView];
+    }
+    
+    [self addSubview:newScrollView];
+    
+    maskView = [[MaskView alloc] initWithFrame:CGRectMake(0, 240-20, 414, 20)];
+    
+    NSString *title = [arrayInfo objectAtIndex:0];
+    [maskView setTitle:title];
+    [maskView setPageControlNum:0];
+    [self addSubview:maskView];
+    
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    int currentPageNum = (int)scrollView.contentOffset.x / 414;
+    NSString *title = [arrayInfo objectAtIndex:currentPageNum];
+    [maskView setTitle:title];
+    [maskView setPageControlNum:currentPageNum];
 }
 
 /**
