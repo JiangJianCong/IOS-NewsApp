@@ -18,6 +18,9 @@
     MiddleView *middleView;
     UIView *searchView;
     UISearchBar *searchBar;
+    UIView *nightModelView;
+    UILabel *nightModelLabel;
+    
 }
 
 @end
@@ -28,8 +31,38 @@
     [super viewDidLoad];
     [self addTopView];
 //    [self addMiddleView];
-    [self addMyButton];
-    [self addSearchView];
+//    [self addMyButton];
+//    [self addSearchView];
+    [self addNightModel];
+}
+
+-(void) addNightModel {
+    nightModelView = [[UIView alloc] initWithFrame:CGRectMake(0, 65, 414, 80)];
+    nightModelView.backgroundColor = [UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:1.0];
+    nightModelLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 80, 80)];
+    nightModelLabel.text = @"暗夜模式:";
+    [nightModelView addSubview: nightModelLabel];
+    UISwitch *mswitch = [[UISwitch alloc]initWithFrame:CGRectMake(80, (80-31)/2, 51, 31)];
+    [mswitch addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
+    [nightModelView addSubview:mswitch];
+    [self.view addSubview:nightModelView];
+}
+
+-(void)switchAction:(UISwitch*)sender {
+    if ([sender isOn]) {
+        self.view.backgroundColor = [UIColor blackColor];
+        nightModelLabel.textColor = [UIColor whiteColor];
+        nightModelView.backgroundColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:1.0];
+        topView.backgroundColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:1.0];
+        
+    } else {
+        self.view.backgroundColor = [UIColor whiteColor];
+        nightModelLabel.textColor = [UIColor blackColor];
+        nightModelView.backgroundColor = [UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:0.8];
+        topView.backgroundColor = [UIColor colorWithRed:138/255.0 green:206/255.0 blue:245/255.0 alpha:1.0];
+        
+        
+    }
 }
 
 -(void) addSearchView {
