@@ -18,6 +18,7 @@
 		B285D1BD20D255C500549340 /* PromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = B285D1BC20D255C500549340 /* PromptView.m */; };
 		B285D1C020D2627800549340 /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = B285D1BF20D2627800549340 /* MaskView.m */; };
 		B285D1C320D2979F00549340 /* MixImageText.m in Sources */ = {isa = PBXBuildFile; fileRef = B285D1C220D2979F00549340 /* MixImageText.m */; };
+		B285D1C620D29EDF00549340 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B285D1C520D29EDF00549340 /* MyButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		B285D1BF20D2627800549340 /* MaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
 		B285D1C120D2979F00549340 /* MixImageText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixImageText.h; sourceTree = "<group>"; };
 		B285D1C220D2979F00549340 /* MixImageText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixImageText.m; sourceTree = "<group>"; };
+		B285D1C420D29EDF00549340 /* MyButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
+		B285D1C520D29EDF00549340 /* MyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				B285D1BF20D2627800549340 /* MaskView.m */,
 				B285D1C120D2979F00549340 /* MixImageText.h */,
 				B285D1C220D2979F00549340 /* MixImageText.m */,
+				B285D1C420D29EDF00549340 /* MyButton.h */,
+				B285D1C520D29EDF00549340 /* MyButton.m */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B285D1C620D29EDF00549340 /* MyButton.m in Sources */,
 				B2811E7620D1578C00C77FCA /* ViewController.m in Sources */,
 				B2811E8120D1578D00C77FCA /* main.m in Sources */,
 				B2811E8920D158C200C77FCA /* TopView.m in Sources */,

@@ -100,3 +100,8 @@
 	- 添加MixImageText类，用来初始化整个图文列表
 	- 在MiddleView里面调用即可
 
+6. 搜索功能界面
+	- TopView上新增Search按钮
+	- 因为没有用视图控制器，所以就使用addSubView的方法来模拟
+
+
